@@ -8,8 +8,8 @@ from telebot import types
 # ==============================
 # الإعدادات - Settings
 # ==============================
-TOKEN = "7850007026:AAFki1ZQaKJ6jsusXFH1yFOj_O_94FnmJsw"
-ADMIN_ID = 7019373567 
+TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  # ضع توكن البوت هنا  
+ADMIN_ID = 0000000 # YOUR ID  
 CHANNEL_ID = "@python_1I" 
 bot = telebot.TeleBot(TOKEN)
 
