@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  chess-bot:
+    build: .
+    container_name: chess_stats_container
+    # إعادة التشغيل تلقائياً في حال انهيار البوت أو إعادة تشغيل السيرفر
+    restart: always
+    volumes:
+      - ./chess_bot.db:/app/chess_bot.db
+    # في حال أردت حفظ سجلات الأخطاء خارج الحاوية (اختياري)
+    # - ./bot_errors.log:/app/bot_errors.log
